@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebaseseries/firebase_options.dart';
+import 'package:firebaseseries/screens/email_auth/login_screen.dart';
 import 'package:firebaseseries/screens/home_screen.dart';
 import 'package:firebaseseries/screens/phone_auth/sign_in_with_phone.dart';
 import 'package:firebaseseries/services/notification_service.dart';

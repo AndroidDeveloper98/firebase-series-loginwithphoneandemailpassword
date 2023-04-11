@@ -11,14 +11,11 @@ class NotificationService {
   static Future<void> initialize() async {
     NotificationSettings settings = await FirebaseMessaging.instance.requestPermission();
     if(settings.authorizationStatus == AuthorizationStatus.authorized) {
-      
       String? token = await FirebaseMessaging.instance.getToken();
       if(token != null) {
         log(token);
       }
-
       FirebaseMessaging.onBackgroundMessage(backgroundHandler);
-
       log("Notifications Initialized!");
     }
   }

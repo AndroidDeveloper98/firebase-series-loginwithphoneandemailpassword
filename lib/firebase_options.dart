@@ -32,6 +32,16 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions have not been configured for macos - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
+      case TargetPlatform.windows:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+      case TargetPlatform.linux:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for linux - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -40,21 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAAZ7NJ-KIMqFtqF6arQRpPfizRbeDlw1g',
-    appId: '1:995917499771:android:9e54112ce90bc2ddf901de',
-    messagingSenderId: '995917499771',
-    projectId: 'fir-series-aac24',
-    storageBucket: 'fir-series-aac24.appspot.com',
+    apiKey: 'AIzaSyAojew4K1h3i-kN8T619vP6fB5xgQtxFiw',
+    appId: '1:14704626175:android:4c351ebb043b422093ffca',
+    messagingSenderId: '14704626175',
+    projectId: 'flutter-firebase-b25a0',
+    storageBucket: 'flutter-firebase-b25a0.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCk21V0PA8z3bCWDHLXHHG2i5IUf5B3vdM',
-    appId: '1:995917499771:ios:50639af076d49fb7f901de',
-    messagingSenderId: '995917499771',
-    projectId: 'fir-series-aac24',
-    storageBucket: 'fir-series-aac24.appspot.com',
-    androidClientId: '995917499771-0tastkpjhil9d0gdjj6tphj0b5eh149r.apps.googleusercontent.com',
-    iosClientId: '995917499771-se9mlesi78un9nr758odm95sbh0aqafm.apps.googleusercontent.com',
+    apiKey: 'AIzaSyA7ewrMDuaQbqEQPgPNQVewf6hTjRab6nA',
+    appId: '1:14704626175:ios:9ce8aa08e679c08e93ffca',
+    messagingSenderId: '14704626175',
+    projectId: 'flutter-firebase-b25a0',
+    storageBucket: 'flutter-firebase-b25a0.appspot.com',
+    iosClientId: '14704626175-nssv2se5rokm9n8aui1lnst7tk7qb11t.apps.googleusercontent.com',
     iosBundleId: 'com.slantcode.firebaseseries',
   );
 }
